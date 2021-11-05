@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        background-image: url("https://recmiennam.com/wp-content/uploads/2018/01/hinh-nen-anime-lang-man-9.jpg");
+        margin: 110px;
+        padding: 0;
+        background-color: #0b1552;
+        align-items: center;
+    }
+    #heart {
+        height: 200px;
+        width: 200px;
+        margin: auto;
+        background-color: #f20044;
+        position: relative;
+        transform: rotate(-45deg);
+        box-shadow: -20px 20px 90px #f20044;
+        animation: heart 0.6s linear infinite;
+        cursor: pointer;
+    }
+    #heart:before {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: #f20044;
+        top: -52%;
+        border-radius: 100px;
+        box-shadow: -20px -20px 90px #f20044;
+    }
+    #heart:after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: #f20044;
+        right: -52%;
+        border-radius: 100px;
+        box-shadow: 20px 20px 90px #f20044;
+    }
+
+    .love {
+        color: #9ea500;
+        text-align: center;
+        padding: 0;
+        font-size: 90px;
+        text-shadow: 8px 2px 4px #d30000;
+    }
+    #heart:hover {
+
+    }
+    @keyframes heart {
+        0% {
+            transform: rotate(-45deg) scale(1.07);
+        }
+        80% {
+            transform: rotate(-45deg) scale(1);
+        }
+        100% {
+            transform: rotate(-45deg) scale(1);
+        }
+    }
+    @keyframes love {
+        0% {
+            background-color: yellowgreen;
+            color: white;
+        }
+        50% {
+            background-color: red;
+            color: yellow;
+        }
+    }
+    .img {
+        margin: 30px;
+    }
+    @-webkit-keyframes test {
+        0% { color: #ff3232; }
+        50% { color: #9e8509;  }
+        100% { color: #ff3232;  }
+    }
+    @-moz-keyframes my {
+        0% { color: #9c0a95;  }
+        50% { color: #dea204;  }
+        100% { color: #9c0a95;  }
+    }
+    @-o-keyframes my {
+        0% { color: #F8CD0A; }
+        50% { color: #a8900b; }
+        100% { color: #F8CD0A;  }
+    }
+    @keyframes my {
+        0% { color: #930000;  }
+        50% { color: #b87f0a;  }
+        100% { color: #930000;  }
+    }
+    .test {
+        font-size:100px;
+        text-align: center;
+        font-weight:bold;
+        padding: 0;
+        text-shadow: 8px 2px 4px #d30000;
+        -webkit-animation: my 700ms infinite;
+        -moz-animation: my 700ms infinite;
+        -o-animation: my 700ms infinite;
+        animation: my 700ms infinite;
+    }
+    .link {
+        font-size:150px;
+        color: #ffffff;
+        text-align: center;
+        display: inherit;
+    }
+
+</style>
+<body>
+<div id="heart"></div>
+<h1 class="test"><i class="fa fa-heart" style="color:red"></i>Yêu Trang<i class="fa fa-heart" style="color:red"></i></h1>
+<img class="img" src="js/249904685_1278777925879167_4366773197525386073_n.jpg" width="40%">
+<img class="img" src="js/251382621_732507437705990_2620012738601175823_n.jpg" width="40%">
+<p class="test">---I Love You---</p>
+<p class="love">'''Ấn vô cái xe đi'''</p>
+<a class="link" href="test.html"><i class="fa fa-car"></i></a>
+</body>
+</html>
